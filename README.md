@@ -16,6 +16,13 @@ python3、frida 、一台已root手机(我测试机为Redmi 3s，刷机成魔趣
 
 2022-01-14：删除hook短信接口。新增：可指定模块hook或不hook哪些模块。默认不传，全扫描。
 
+准备工作，模拟器可以选择夜神模拟器（已经root了的）
+然后模拟器安装frida-server，网站：https://github.com/frida/frida/releases
+使用夜神模拟器就下载X86的frida-server
+然后把这个文件拷贝到data/local/tmp目录下，
+然后，cmd命令行 adb shell(进入模拟器) cd data/local/tmp（切换到刚刚提交的文件目录下），（如果遇到没有权限，则执行chmod 777 frida-server-12.10.4-android-x86 获取文件的操作权限）
+最后启动服务./frida-server-12.10.4-android-x86。然后就另外起一个cmd编辑框，输入一下对应的操作就好了
+
 下载：
 
 ```
